@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RMx-3f-FxP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="pY4-Hu-kfo">
+            <objects>
+                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="M2Q-oo-ucO" kind="relationship" relationship="rootViewController" id="Ybm-SE-cL8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-630"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="yUG-lL-AsK">
+            <objects>
+                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="Fagdag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SYR-Wa-9uf"/>
+                        <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zB-3K-baT">
+                                <rect key="frame" x="16" y="562" width="141" height="30"/>
+                                <state key="normal" title="New subpage segue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JEX-9P-axG" kind="show" identifier="subpageSegue" id="AH3-cL-Yzu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKd-6p-wih">
+                                <rect key="frame" x="16" y="72" width="42" height="42"/>
+                                <state key="normal" image="sirkel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pop" destination="JEX-9P-axG" eventType="touchUpInside" id="5cv-lV-Ppv"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1SK-NN-gCE">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" red="0.89019607840000003" green="0.1764705882" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MKd-6p-wih" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" id="O1W-29-9wQ"/>
+                            <constraint firstAttribute="centerX" secondItem="1SK-NN-gCE" secondAttribute="centerX" id="Pjf-qn-s6H"/>
+                            <constraint firstAttribute="centerY" secondItem="1SK-NN-gCE" secondAttribute="centerY" id="llK-nz-THY"/>
+                            <constraint firstItem="MKd-6p-wih" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="vOT-ag-tJW"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="mOI-FS-AaM"/>
+                    <connections>
+                        <outlet property="backButtonView" destination="MKd-6p-wih" id="rok-lx-0lT"/>
+                        <outlet property="progressIndicator" destination="1SK-NN-gCE" id="8VV-1h-ufb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="129"/>
+        </scene>
+        <!--Morgenbladet-->
+        <scene sceneID="Vei-n6-7oD">
+            <objects>
+                <viewController id="M2Q-oo-ucO" customClass="MasterViewController" customModule="Fagdag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SXr-gV-iDd"/>
+                        <viewControllerLayoutGuide type="bottom" id="71u-cn-xTi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="osb-lf-ft2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="wg6-08-agj">
+                                <rect key="frame" x="281" y="289" width="37" height="37"/>
+                                <color key="color" red="0.89019607840000003" green="0.1764705882" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="wg6-08-agj" secondAttribute="centerY" id="1pa-hc-xXK"/>
+                            <constraint firstAttribute="centerX" secondItem="wg6-08-agj" secondAttribute="centerX" id="ixF-KM-WMd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Morgenbladet" id="PMe-wq-6sZ"/>
+                    <connections>
+                        <outlet property="progressIndicator" destination="wg6-08-agj" id="X5n-rC-X0I"/>
+                        <segue destination="JEX-9P-axG" kind="show" identifier="showSubpage" id="hZY-2I-lav"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofm-2g-Nbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="-630"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sirkel" width="42" height="42"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hZY-2I-lav"/>
+    </inferredMetricsTieBreakers>
+</document>

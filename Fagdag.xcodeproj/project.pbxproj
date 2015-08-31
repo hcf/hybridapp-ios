@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18044C8C1B85AC8300B9D137 /* FacebookScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18044C8B1B85AC8300B9D137 /* FacebookScriptMessageHandler.swift */; };
+		181D66B11B3DDF49000506AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B01B3DDF49000506AC /* AppDelegate.swift */; };
+		181D66B31B3DDF49000506AC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B21B3DDF49000506AC /* MasterViewController.swift */; };
+		181D66B51B3DDF49000506AC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B41B3DDF49000506AC /* DetailViewController.swift */; };
+		181D66B81B3DDF49000506AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D66B61B3DDF49000506AC /* Main.storyboard */; };
+		181D66BA1B3DDF49000506AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181D66B91B3DDF49000506AC /* Images.xcassets */; };
+		181D66BD1B3DDF49000506AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181D66BB1B3DDF49000506AC /* LaunchScreen.xib */; };
+		182111071B41DD77000185BB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182111061B41DD77000185BB /* WebKit.framework */; };
+		1863A9111B7A83E100E3B5F4 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863A9101B7A83E100E3B5F4 /* Navigation.swift */; };
+		1863A9131B7DC4CC00E3B5F4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863A9121B7DC4CC00E3B5F4 /* Settings.swift */; };
+		1863A9151B7E1C6700E3B5F4 /* hide.js in Resources */ = {isa = PBXBuildFile; fileRef = 1863A9141B7E1C6700E3B5F4 /* hide.js */; };
+		1863A9171B8308CD00E3B5F4 /* MasterViewController+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863A9161B8308CD00E3B5F4 /* MasterViewController+UIGestureRecognizerDelegate.swift */; };
+		1863A9191B830C2600E3B5F4 /* sharing.js in Resources */ = {isa = PBXBuildFile; fileRef = 1863A9181B830C2600E3B5F4 /* sharing.js */; };
+		1863A91B1B830CEC00E3B5F4 /* JavaScriptParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863A91A1B830CEC00E3B5F4 /* JavaScriptParser.swift */; };
+		18825CF61B8F5BA1003C0EA9 /* ShareScriptMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18825CF51B8F5BA1003C0EA9 /* ShareScriptMessage.swift */; };
+		18825CF81B9039C3003C0EA9 /* UINavigationController+Transparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18825CF71B9039C3003C0EA9 /* UINavigationController+Transparent.swift */; };
+		18825CFA1B90ECF8003C0EA9 /* WKProgressActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18825CF91B90ECF8003C0EA9 /* WKProgressActionDelegate.swift */; };
+		18825CFC1B949B56003C0EA9 /* initial-load.js in Resources */ = {isa = PBXBuildFile; fileRef = 18825CFB1B949B56003C0EA9 /* initial-load.js */; };
+		18825CFE1B949C1E003C0EA9 /* InitialLoadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18825CFD1B949C1E003C0EA9 /* InitialLoadHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18044C8B1B85AC8300B9D137 /* FacebookScriptMessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookScriptMessageHandler.swift; sourceTree = "<group>"; };
+		181D66AB1B3DDF49000506AC /* Fagdag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fagdag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		181D66AF1B3DDF49000506AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181D66B01B3DDF49000506AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		181D66B21B3DDF49000506AC /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		181D66B41B3DDF49000506AC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		181D66B71B3DDF49000506AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		181D66B91B3DDF49000506AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		181D66BC1B3DDF49000506AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		182111061B41DD77000185BB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1863A9101B7A83E100E3B5F4 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		1863A9121B7DC4CC00E3B5F4 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1863A9141B7E1C6700E3B5F4 /* hide.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hide.js; sourceTree = "<group>"; };
+		1863A9161B8308CD00E3B5F4 /* MasterViewController+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MasterViewController+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		1863A9181B830C2600E3B5F4 /* sharing.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sharing.js; sourceTree = "<group>"; };
+		1863A91A1B830CEC00E3B5F4 /* JavaScriptParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavaScriptParser.swift; sourceTree = "<group>"; };
+		18825CF51B8F5BA1003C0EA9 /* ShareScriptMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareScriptMessage.swift; sourceTree = "<group>"; };
+		18825CF71B9039C3003C0EA9 /* UINavigationController+Transparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Transparent.swift"; sourceTree = "<group>"; };
+		18825CF91B90ECF8003C0EA9 /* WKProgressActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKProgressActionDelegate.swift; sourceTree = "<group>"; };
+		18825CFB1B949B56003C0EA9 /* initial-load.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "initial-load.js"; sourceTree = "<group>"; };
+		18825CFD1B949C1E003C0EA9 /* InitialLoadHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialLoadHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		181D66A81B3DDF49000506AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182111071B41DD77000185BB /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		181D66A21B3DDF49000506AC = {
+			isa = PBXGroup;
+			children = (
+				182111061B41DD77000185BB /* WebKit.framework */,
+				181D66AD1B3DDF49000506AC /* Fagdag */,
+				181D66AC1B3DDF49000506AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		181D66AC1B3DDF49000506AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				181D66AB1B3DDF49000506AC /* Fagdag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		181D66AD1B3DDF49000506AC /* Fagdag */ = {
+			isa = PBXGroup;
+			children = (
+				181D66B01B3DDF49000506AC /* AppDelegate.swift */,
+				181D66B21B3DDF49000506AC /* MasterViewController.swift */,
+				1863A9161B8308CD00E3B5F4 /* MasterViewController+UIGestureRecognizerDelegate.swift */,
+				181D66B41B3DDF49000506AC /* DetailViewController.swift */,
+				1863A9101B7A83E100E3B5F4 /* Navigation.swift */,
+				1863A91A1B830CEC00E3B5F4 /* JavaScriptParser.swift */,
+				1863A9121B7DC4CC00E3B5F4 /* Settings.swift */,
+				181D66B61B3DDF49000506AC /* Main.storyboard */,
+				181D66B91B3DDF49000506AC /* Images.xcassets */,
+				181D66BB1B3DDF49000506AC /* LaunchScreen.xib */,
+				181D66AE1B3DDF49000506AC /* Supporting Files */,
+				18044C8B1B85AC8300B9D137 /* FacebookScriptMessageHandler.swift */,
+				18825CF51B8F5BA1003C0EA9 /* ShareScriptMessage.swift */,
+				18825CF71B9039C3003C0EA9 /* UINavigationController+Transparent.swift */,
+				18825CF91B90ECF8003C0EA9 /* WKProgressActionDelegate.swift */,
+				18825CFD1B949C1E003C0EA9 /* InitialLoadHandler.swift */,
+			);
+			path = Fagdag;
+			sourceTree = "<group>";
+		};
+		181D66AE1B3DDF49000506AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				181D66AF1B3DDF49000506AC /* Info.plist */,
+				1863A9141B7E1C6700E3B5F4 /* hide.js */,
+				1863A9181B830C2600E3B5F4 /* sharing.js */,
+				18825CFB1B949B56003C0EA9 /* initial-load.js */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		181D66AA1B3DDF49000506AC /* Fagdag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 181D66CC1B3DDF4A000506AC /* Build configuration list for PBXNativeTarget "Fagdag" */;
+			buildPhases = (
+				181D66A71B3DDF49000506AC /* Sources */,
+				181D66A81B3DDF49000506AC /* Frameworks */,
+				181D66A91B3DDF49000506AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fagdag;
+			productName = Fagdag;
+			productReference = 181D66AB1B3DDF49000506AC /* Fagdag.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		181D66A31B3DDF49000506AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = BEKK;
+				TargetAttributes = {
+					181D66AA1B3DDF49000506AC = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 181D66A61B3DDF49000506AC /* Build configuration list for PBXProject "Fagdag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 181D66A21B3DDF49000506AC;
+			productRefGroup = 181D66AC1B3DDF49000506AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				181D66AA1B3DDF49000506AC /* Fagdag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		181D66A91B3DDF49000506AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1863A9191B830C2600E3B5F4 /* sharing.js in Resources */,
+				1863A9151B7E1C6700E3B5F4 /* hide.js in Resources */,
+				181D66B81B3DDF49000506AC /* Main.storyboard in Resources */,
+				18825CFC1B949B56003C0EA9 /* initial-load.js in Resources */,
+				181D66BD1B3DDF49000506AC /* LaunchScreen.xib in Resources */,
+				181D66BA1B3DDF49000506AC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		181D66A71B3DDF49000506AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18825CF81B9039C3003C0EA9 /* UINavigationController+Transparent.swift in Sources */,
+				181D66B51B3DDF49000506AC /* DetailViewController.swift in Sources */,
+				1863A91B1B830CEC00E3B5F4 /* JavaScriptParser.swift in Sources */,
+				18825CF61B8F5BA1003C0EA9 /* ShareScriptMessage.swift in Sources */,
+				181D66B31B3DDF49000506AC /* MasterViewController.swift in Sources */,
+				18044C8C1B85AC8300B9D137 /* FacebookScriptMessageHandler.swift in Sources */,
+				1863A9171B8308CD00E3B5F4 /* MasterViewController+UIGestureRecognizerDelegate.swift in Sources */,
+				18825CFA1B90ECF8003C0EA9 /* WKProgressActionDelegate.swift in Sources */,
+				181D66B11B3DDF49000506AC /* AppDelegate.swift in Sources */,
+				1863A9111B7A83E100E3B5F4 /* Navigation.swift in Sources */,
+				1863A9131B7DC4CC00E3B5F4 /* Settings.swift in Sources */,
+				18825CFE1B949C1E003C0EA9 /* InitialLoadHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		181D66B61B3DDF49000506AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				181D66B71B3DDF49000506AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		181D66BB1B3DDF49000506AC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				181D66BC1B3DDF49000506AC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		181D66CA1B3DDF4A000506AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		181D66CB1B3DDF4A000506AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		181D66CD1B3DDF4A000506AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fagdag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		181D66CE1B3DDF4A000506AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fagdag/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		181D66A61B3DDF49000506AC /* Build configuration list for PBXProject "Fagdag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181D66CA1B3DDF4A000506AC /* Debug */,
+				181D66CB1B3DDF4A000506AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		181D66CC1B3DDF4A000506AC /* Build configuration list for PBXNativeTarget "Fagdag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181D66CD1B3DDF4A000506AC /* Debug */,
+				181D66CE1B3DDF4A000506AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 181D66A31B3DDF49000506AC /* Project object */;
+}
