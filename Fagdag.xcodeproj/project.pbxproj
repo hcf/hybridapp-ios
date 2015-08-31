@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		18044C8C1B85AC8300B9D137 /* FacebookScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18044C8B1B85AC8300B9D137 /* FacebookScriptMessageHandler.swift */; };
 		181D66B11B3DDF49000506AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B01B3DDF49000506AC /* AppDelegate.swift */; };
-		181D66B31B3DDF49000506AC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B21B3DDF49000506AC /* MasterViewController.swift */; };
+		181D66B31B3DDF49000506AC /* IndexPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B21B3DDF49000506AC /* IndexPageViewController.swift */; };
 		181D66B51B3DDF49000506AC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B41B3DDF49000506AC /* DetailViewController.swift */; };
 		181D66B81B3DDF49000506AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D66B61B3DDF49000506AC /* Main.storyboard */; };
 		181D66BA1B3DDF49000506AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181D66B91B3DDF49000506AC /* Images.xcassets */; };
@@ -18,7 +18,7 @@
 		1863A9111B7A83E100E3B5F4 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863A9101B7A83E100E3B5F4 /* Navigation.swift */; };
 		1863A9131B7DC4CC00E3B5F4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863A9121B7DC4CC00E3B5F4 /* Settings.swift */; };
 		1863A9151B7E1C6700E3B5F4 /* hide.js in Resources */ = {isa = PBXBuildFile; fileRef = 1863A9141B7E1C6700E3B5F4 /* hide.js */; };
-		1863A9171B8308CD00E3B5F4 /* MasterViewController+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863A9161B8308CD00E3B5F4 /* MasterViewController+UIGestureRecognizerDelegate.swift */; };
+		1863A9171B8308CD00E3B5F4 /* IndexPageViewController+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863A9161B8308CD00E3B5F4 /* IndexPageViewController+UIGestureRecognizerDelegate.swift */; };
 		1863A9191B830C2600E3B5F4 /* sharing.js in Resources */ = {isa = PBXBuildFile; fileRef = 1863A9181B830C2600E3B5F4 /* sharing.js */; };
 		1863A91B1B830CEC00E3B5F4 /* JavaScriptParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863A91A1B830CEC00E3B5F4 /* JavaScriptParser.swift */; };
 		18825CF61B8F5BA1003C0EA9 /* ShareScriptMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18825CF51B8F5BA1003C0EA9 /* ShareScriptMessage.swift */; };
@@ -33,7 +33,7 @@
 		181D66AB1B3DDF49000506AC /* Fagdag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fagdag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D66AF1B3DDF49000506AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181D66B01B3DDF49000506AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		181D66B21B3DDF49000506AC /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		181D66B21B3DDF49000506AC /* IndexPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPageViewController.swift; sourceTree = "<group>"; };
 		181D66B41B3DDF49000506AC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		181D66B71B3DDF49000506AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181D66B91B3DDF49000506AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		1863A9101B7A83E100E3B5F4 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		1863A9121B7DC4CC00E3B5F4 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1863A9141B7E1C6700E3B5F4 /* hide.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hide.js; sourceTree = "<group>"; };
-		1863A9161B8308CD00E3B5F4 /* MasterViewController+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MasterViewController+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		1863A9161B8308CD00E3B5F4 /* IndexPageViewController+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPageViewController+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
 		1863A9181B830C2600E3B5F4 /* sharing.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sharing.js; sourceTree = "<group>"; };
 		1863A91A1B830CEC00E3B5F4 /* JavaScriptParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavaScriptParser.swift; sourceTree = "<group>"; };
 		18825CF51B8F5BA1003C0EA9 /* ShareScriptMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareScriptMessage.swift; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				181D66B01B3DDF49000506AC /* AppDelegate.swift */,
-				181D66B21B3DDF49000506AC /* MasterViewController.swift */,
-				1863A9161B8308CD00E3B5F4 /* MasterViewController+UIGestureRecognizerDelegate.swift */,
+				181D66B21B3DDF49000506AC /* IndexPageViewController.swift */,
+				1863A9161B8308CD00E3B5F4 /* IndexPageViewController+UIGestureRecognizerDelegate.swift */,
 				181D66B41B3DDF49000506AC /* DetailViewController.swift */,
 				1863A9101B7A83E100E3B5F4 /* Navigation.swift */,
 				1863A91A1B830CEC00E3B5F4 /* JavaScriptParser.swift */,
@@ -192,9 +192,9 @@
 				181D66B51B3DDF49000506AC /* DetailViewController.swift in Sources */,
 				1863A91B1B830CEC00E3B5F4 /* JavaScriptParser.swift in Sources */,
 				18825CF61B8F5BA1003C0EA9 /* ShareScriptMessage.swift in Sources */,
-				181D66B31B3DDF49000506AC /* MasterViewController.swift in Sources */,
+				181D66B31B3DDF49000506AC /* IndexPageViewController.swift in Sources */,
 				18044C8C1B85AC8300B9D137 /* FacebookScriptMessageHandler.swift in Sources */,
-				1863A9171B8308CD00E3B5F4 /* MasterViewController+UIGestureRecognizerDelegate.swift in Sources */,
+				1863A9171B8308CD00E3B5F4 /* IndexPageViewController+UIGestureRecognizerDelegate.swift in Sources */,
 				18825CFA1B90ECF8003C0EA9 /* WKProgressActionDelegate.swift in Sources */,
 				181D66B11B3DDF49000506AC /* AppDelegate.swift in Sources */,
 				1863A9111B7A83E100E3B5F4 /* Navigation.swift in Sources */,

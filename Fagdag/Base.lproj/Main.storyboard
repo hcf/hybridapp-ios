@@ -78,7 +78,7 @@
         <!--Morgenbladet-->
         <scene sceneID="Vei-n6-7oD">
             <objects>
-                <viewController id="M2Q-oo-ucO" customClass="MasterViewController" customModule="Fagdag" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M2Q-oo-ucO" customClass="IndexPageViewController" customModule="Fagdag" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SXr-gV-iDd"/>
                         <viewControllerLayoutGuide type="bottom" id="71u-cn-xTi"/>

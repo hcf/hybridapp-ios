@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension MasterViewController: UIGestureRecognizerDelegate {
+extension IndexPageViewController: UIGestureRecognizerDelegate {
     
     func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
         return navigationController?.viewControllers.count > 1;

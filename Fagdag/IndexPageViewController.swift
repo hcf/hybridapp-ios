@@ -1,15 +1,7 @@
-//
-//  MasterViewController.swift
-//  Fagdag
-//
-//  Created by Hans-Chr Fjeldberg on 26/06/15.
-//  Copyright (c) 2015 BEKK. All rights reserved.
-//
-
 import UIKit
 import WebKit
 
-class MasterViewController: UIViewController, WKProgressActionDelegate {
+class IndexPageViewController: UIViewController, WKProgressActionDelegate {
 
     var webView: WKWebView!
     
@@ -133,11 +125,11 @@ class MasterViewController: UIViewController, WKProgressActionDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showSubpage" {
             
-            if let masterViewController = sender as? MasterViewController {
+            if let indexPageViewController = sender as? IndexPageViewController {
                 
                 if let detailViewController = segue.destinationViewController as? DetailViewController {
-                    detailViewController.currentPage = masterViewController.currentSubpage
-                    detailViewController.configuration = masterViewController.configuration
+                    detailViewController.currentPage = indexPageViewController.currentSubpage
+                    detailViewController.configuration = indexPageViewController.configuration
                 }
             }
             
