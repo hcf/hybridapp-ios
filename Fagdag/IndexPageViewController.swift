@@ -2,6 +2,8 @@ import UIKit
 import WebKit
 
 class IndexPageViewController: UIViewController, WKProgressActionDelegate {
+    
+    static var token: dispatch_once_t = 0
 
     var webView: WKWebView!
     
@@ -16,8 +18,6 @@ class IndexPageViewController: UIViewController, WKProgressActionDelegate {
         super.viewDidLoad()
         
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "logo"))
-        
-        addNotificationObservers();
         
         let userContentController = WKUserContentController()
         configuration = WKWebViewConfiguration()
@@ -46,6 +46,11 @@ class IndexPageViewController: UIViewController, WKProgressActionDelegate {
     
     override func viewDidAppear(animated: Bool) {
         navigationController?.interactivePopGestureRecognizer?.delegate = self
+        addNotificationObservers()
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        removeNotificationObservers()
     }
     
     // MARK: - User scripts
@@ -82,17 +87,24 @@ class IndexPageViewController: UIViewController, WKProgressActionDelegate {
     // MARK: - Notifications
     
     private func addNotificationObservers() {
-        NSNotificationCenter.defaultCenter().addObserver(
-            self,
-            selector: "nagivatingToSubpage:",
-            name: "navigatingToSubpage",
-            object: nil)
+        
+        dispatch_once(&IndexPageViewController.token) {
+            NSNotificationCenter.defaultCenter().addObserver(
+                self,
+                selector: "nagivatingToSubpage:",
+                name: "navigatingToSubpage",
+                object: nil)
+        }
         
         NSNotificationCenter.defaultCenter().addObserver(
             self,
             selector: "initialLoad:",
             name: "initialLoad",
             object: nil)
+    }
+    
+    private func removeNotificationObservers() {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "initialLoad", object: nil)
     }
     
     dynamic private func nagivatingToSubpage(notification: NSNotification) {
