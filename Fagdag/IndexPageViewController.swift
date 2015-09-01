@@ -127,9 +127,9 @@ class IndexPageViewController: UIViewController, WKProgressActionDelegate {
             
             if let indexPageViewController = sender as? IndexPageViewController {
                 
-                if let detailViewController = segue.destinationViewController as? DetailViewController {
-                    detailViewController.currentPage = indexPageViewController.currentSubpage
-                    detailViewController.configuration = indexPageViewController.configuration
+                if let subpageViewController = segue.destinationViewController as? SubpageViewController {
+                    subpageViewController.currentPage = indexPageViewController.currentSubpage
+                    subpageViewController.configuration = indexPageViewController.configuration
                 }
             }
             

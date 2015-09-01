@@ -10,7 +10,7 @@
 		18044C8C1B85AC8300B9D137 /* FacebookScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18044C8B1B85AC8300B9D137 /* FacebookScriptMessageHandler.swift */; };
 		181D66B11B3DDF49000506AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B01B3DDF49000506AC /* AppDelegate.swift */; };
 		181D66B31B3DDF49000506AC /* IndexPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B21B3DDF49000506AC /* IndexPageViewController.swift */; };
-		181D66B51B3DDF49000506AC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B41B3DDF49000506AC /* DetailViewController.swift */; };
+		181D66B51B3DDF49000506AC /* SubpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D66B41B3DDF49000506AC /* SubpageViewController.swift */; };
 		181D66B81B3DDF49000506AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D66B61B3DDF49000506AC /* Main.storyboard */; };
 		181D66BA1B3DDF49000506AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181D66B91B3DDF49000506AC /* Images.xcassets */; };
 		181D66BD1B3DDF49000506AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181D66BB1B3DDF49000506AC /* LaunchScreen.xib */; };
@@ -34,7 +34,7 @@
 		181D66AF1B3DDF49000506AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181D66B01B3DDF49000506AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181D66B21B3DDF49000506AC /* IndexPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPageViewController.swift; sourceTree = "<group>"; };
-		181D66B41B3DDF49000506AC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		181D66B41B3DDF49000506AC /* SubpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubpageViewController.swift; sourceTree = "<group>"; };
 		181D66B71B3DDF49000506AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181D66B91B3DDF49000506AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		181D66BC1B3DDF49000506AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 				181D66B01B3DDF49000506AC /* AppDelegate.swift */,
 				181D66B21B3DDF49000506AC /* IndexPageViewController.swift */,
 				1863A9161B8308CD00E3B5F4 /* IndexPageViewController+UIGestureRecognizerDelegate.swift */,
-				181D66B41B3DDF49000506AC /* DetailViewController.swift */,
+				181D66B41B3DDF49000506AC /* SubpageViewController.swift */,
 				1863A9101B7A83E100E3B5F4 /* Navigation.swift */,
 				1863A91A1B830CEC00E3B5F4 /* JavaScriptParser.swift */,
 				1863A9121B7DC4CC00E3B5F4 /* Settings.swift */,
@@ -189,7 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18825CF81B9039C3003C0EA9 /* UINavigationController+Transparent.swift in Sources */,
-				181D66B51B3DDF49000506AC /* DetailViewController.swift in Sources */,
+				181D66B51B3DDF49000506AC /* SubpageViewController.swift in Sources */,
 				1863A91B1B830CEC00E3B5F4 /* JavaScriptParser.swift in Sources */,
 				18825CF61B8F5BA1003C0EA9 /* ShareScriptMessage.swift in Sources */,
 				181D66B31B3DDF49000506AC /* IndexPageViewController.swift in Sources */,

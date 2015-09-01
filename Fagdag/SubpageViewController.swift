@@ -1,16 +1,8 @@
-//
-//  DetailViewController.swift
-//  Fagdag
-//
-//  Created by Hans-Chr Fjeldberg on 26/06/15.
-//  Copyright (c) 2015 BEKK. All rights reserved.
-//
-
 import UIKit
 import WebKit
 import Social
 
-class DetailViewController: UIViewController, WKProgressActionDelegate {
+class SubpageViewController: UIViewController, WKProgressActionDelegate {
     
     var webView: WKWebView!
     @IBOutlet weak var backButtonView: UIButton!
@@ -49,8 +41,6 @@ class DetailViewController: UIViewController, WKProgressActionDelegate {
     }
     
     @IBAction func pop() {
-        println("Popping view controller from back button")
-        
         self.navigationController?.popViewControllerAnimated(true)
     }
     
@@ -75,8 +65,6 @@ class DetailViewController: UIViewController, WKProgressActionDelegate {
     }
     
     dynamic private func share(notification: NSNotification) {
-     
-        println("Showing share sheet")
         
         if let shareMessage = notification.object as? ShareScriptMessage {
             
@@ -98,9 +86,6 @@ class DetailViewController: UIViewController, WKProgressActionDelegate {
                 
                 if let urlString = shareMessage.object?["url"] as? String {
                     if let url = NSURL(string: urlString) {
-                        
-                        println("Sharing url \(url)")
-                        
                         socialController.addURL(url)
                     }
                 }
@@ -118,14 +103,15 @@ class DetailViewController: UIViewController, WKProgressActionDelegate {
     }
     
     dynamic private func initialLoad(notification: NSNotification) {
-        println("Initial load, stopping progress indicator");
-        
-        progressIndicator.stopAnimating()
+        stopProgressIndicator()
     }
     
     func webViewDidFinishLoading() {
-        progressIndicator.stopAnimating()
+        stopProgressIndicator()
     }
     
-    
+    private func stopProgressIndicator() {
+        progressIndicator.stopAnimating()
+    }
+
 }
