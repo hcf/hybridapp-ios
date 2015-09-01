@@ -17,14 +17,11 @@ class Navigation: NSObject, WKNavigationDelegate {
     }
     
     func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
-        println("Fnis")
-        
         delegate.webViewDidFinishLoading()
     }
     
     
     func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
-        println("What to do with \(navigationAction.request.URL), current url: \(webView.URL)");
         
         if !urlWeCanHandle(navigationAction.request.URL) {
             decisionHandler(.Cancel)

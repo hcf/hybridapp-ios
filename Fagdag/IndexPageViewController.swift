@@ -96,7 +96,6 @@ class IndexPageViewController: UIViewController, WKProgressActionDelegate {
     }
     
     dynamic private func nagivatingToSubpage(notification: NSNotification) {
-        println("Navigating to sub page from master view controller to: \(notification.object)");
         
         if let url = notification.object as? NSURL {
             

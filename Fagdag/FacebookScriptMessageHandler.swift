@@ -13,16 +13,12 @@ import Social
 class FacebookScriptMessageHandler : NSObject, WKScriptMessageHandler {
     
     func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
-        println("Received message from webview: \(message)")
-        
         if let object = message.body as? NSDictionary {
             
             let shareMessage = ShareScriptMessage(serviceType: SLServiceTypeFacebook, object: object)
             
             NSNotificationCenter.defaultCenter().postNotificationName("share", object: shareMessage)
-            
         }
-
     }
 
 }
