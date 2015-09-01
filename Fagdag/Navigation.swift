@@ -1,11 +1,3 @@
-//
-//  Navigation.swift
-//  Fagdag
-//
-//  Created by Hans-Chr Fjeldberg on 11/08/15.
-//  Copyright (c) 2015 BEKK. All rights reserved.
-//
-
 import WebKit
 
 class Navigation: NSObject, WKNavigationDelegate {
