@@ -1,3 +1,5 @@
-jQuery(document).ready(function () {
+function contentLoaded() {
     window.webkit.messageHandlers.initialLoad.postMessage({});
-});
+}
+
+document.addEventListener('DOMContentLoaded', contentLoaded);
