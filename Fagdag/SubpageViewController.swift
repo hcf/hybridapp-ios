@@ -72,7 +72,7 @@ class SubpageViewController: UIViewController, WKProgressActionDelegate {
                 
                 let socialController = SLComposeViewController(forServiceType: shareMessage.serviceType)
                 
-                socialController.completionHandler = { (result: SLComposeViewControllerResult) -> Void in
+                socialController.completionHandler = { (result) in
                     socialController.dismissViewControllerAnimated(true, completion: nil)
                     
                     switch(result) {
