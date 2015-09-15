@@ -34,7 +34,7 @@ class IndexPageViewController: UIViewController, WKProgressActionDelegate {
         self.view.insertSubview(self.webView, belowSubview: progressIndicator)
         
         if let url = Settings.rootUrl() {
-            let request = NSURLRequest(URL: url, cachePolicy: NSURLRequestCachePolicy.ReturnCacheDataDontLoad, timeoutInterval: 10)
+            let request = NSURLRequest(URL: url, cachePolicy: NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval: 10)
             
             webView.loadRequest(request)
         }
